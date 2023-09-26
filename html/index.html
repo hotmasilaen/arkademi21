@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML - Hari I</title>
+    <style>
+        .text-yellow {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let x = document.forms['myForm']["fname"].value
+            if (x == '') {
+                alert('Nama tidak boleh kosong!');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Hari ini belajar HTML bersama Arkademi -->
+    <a href="https://prakerja.arkademi.com/">Prakerja</a>
+    <br />
+    Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam
+    meningkatkan karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan
+    industri dan lisensi profesi.
+    <br />
+    <b>
+        Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam
+        meningkatkan karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan
+        industri dan lisensi profesi.
+    </b>
+    <h1>Tingkatkan Karier Profesionalmu</h1>
+    <img src="https://cf.shopee.co.id/file/id-50009109-95c129e61d690489c9ededaff05aa90e_xhdpi" alt="gambar-shopee" />
+    <br />
+    <br />
+    <br />
+    <mark>
+        Arkademi adalah Lembaga Kursus dan Pelatihan resmi berlisensi dari Kementerian Pendidikan, Kebudayaan, Riset,
+        dan Teknologi RI
+    </mark>
+    <p class="text-yellow">
+        Arkademi adalah Lembaga Kursus dan Pelatihan resmi berlisensi dari Kementerian Pendidikan, Kebudayaan, Riset,
+        dan Teknologi RI
+    </p>
+    <form name="myForm" onsubmit="return validateForm()">
+        Nama: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>

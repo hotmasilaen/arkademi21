@@ -1,0 +1,161 @@
+/* selector menggunakan tagHTML */
+/* h1 {
+        } */
+
+.text-blue {
+    color: #006cbb;
+}
+
+.font-big {
+    font-size: larger;
+}
+
+/* selector menggunakan attribute class */
+.box-blue {
+    height: 300px;
+    background-color: #006cbb;
+}
+
+.bg-img {
+    height: 55rem;
+    background-image: url('https://png.pngtree.com/background/20230426/original/pngtree-dahlia-hd-wallpaper-free-3d-hd-floral-picture-image_2493742.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* selector menggunakan id */
+#btn-daftar {
+    background-color: white;
+    border: 1px solid #006cbb;
+    color: #006cbb;
+    border-radius: 3px;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+
+.container {
+    background-color: #dedcd8;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-1 {
+    border: 1px solid gray;
+    padding: 20px;
+    background-color: white !important;
+}
+
+#input-1 {
+    border: 1px solid gray;
+    padding: 20px;
+    background-color: white !important;
+}
+
+#btn-1 {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+
+img {
+    /* filter: blur(2px); */
+}
+
+.container-2 {
+    background-image: url('https://e0.pxfuel.com/wallpapers/938/397/desktop-wallpaper-dark-mountain-latar-belakang-gambar-black-mountain.jpg');
+    background-size: cover;
+    padding: 15rem 0;
+}
+
+.box-blur {
+    background-color: #ffffff82;
+    width: 40%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+input {
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+button {
+    background-color: #de2359;
+    color: white;
+    font-weight: 700;
+    padding: 10px 45px;
+    border-radius: 5px;
+    border: none;
+}
+
+.transition-box {
+    width: 100px;
+    height: 100px;
+    background-color: #de2359;
+    /* transition: width 2s, height 2s, background-color 2s; */
+    /* transition: all 2s; */
+    /* transition-delay: 2s; */
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    /* animation-timing-function: linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%); */
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: animasiKotak;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+}
+
+/* .transition-box:hover {
+            width: 300px;
+            height: 300px;
+            background-color: #006cbb;
+        } */
+
+@keyframes animasiKotak {
+    form {
+        width: 100px;
+        height: 100px;
+        background-color: #de2359;
+    }
+
+    to {
+        width: 300px;
+        height: 300px;
+        background-color: #006cbb;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* img {
+                display: none;
+            } */
+    .container {
+        flex-direction: column;
+    }
+}

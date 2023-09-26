@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript - Hari IV</title>
+</head>
+
+<body>
+    <p id="root"></p>
+    <script>
+        const nama = 'Farhan';
+        const nAma = 'Farhan';
+        const nAMa = 'Farhan';
+
+        var umur = 21;
+        umur = 22;
+
+        let alamat = 'medan';
+        alamat = 'Jakarta';
+
+        console.log('Umur: ', umur);
+        // alert('Umur: ' + umur);
+        document.getElementById('root').innerHTML = 'Umur: ' + umur;
+
+        const number = 1000; //number
+        const number2 = '2500'; //string
+        const hasil = number + number2;
+        console.log('Hasil: ', hasil);
+
+
+        const hargaKursus = 449000;
+        const diskount = 653;
+        const bayar = hargaKursus - diskount;
+        console.log('Yang harus dibayar: ', bayar);
+
+        const password = 'admin123';
+        const incomingPassword = 'admin123';
+        console.log('Apakah password benar? ', password == incomingPassword);
+        console.log('Apakah tipe data password sama? ', password === incomingPassword);
+
+        const value = 25;
+        const value2 = 25;
+        console.log(value != value2);
+        console.log(value !== value2);
+
+        const noHp = '081235673451';
+        console.log(noHp.slice(1, 12));
+        console.log(noHp.replace('0', '+62'));
+
+        const day = 4;
+        switch (day) {
+            case 1:
+                console.log('Hari ini adalah hari Senin');
+                break;
+            case 2:
+                console.log('Hari ini adalah hari Selasa');
+                break;
+            case 3:
+                console.log('Hari ini adalah hari Rabu');
+                break;
+            case 4:
+                console.log('Hari ini adalah hari Kamis');
+                break;
+            case 5:
+                console.log('Hari ini adalah hari Jumat');
+                break;
+            default:
+                console.log('Hari ini adalah WEEKEND!');
+                break;
+        }
+
+        for (var i = 1; i <= 5; i++) {
+            console.log('Number: ', i);
+        }
+
+        const arr = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+
+        for (var i in arr) {
+            console.log('Buah: ', arr[i]);
+        }
+
+        function penjumlahan(x, y) {
+            let hasil = x + y;
+            return hasil;
+        }
+
+        console.log(penjumlahan(1000000, 200));
+        console.log(penjumlahan(5000, 47650));
+
+    </script>
+</body>
+
+</html>
